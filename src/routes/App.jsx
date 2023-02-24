@@ -1,8 +1,11 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from '../containers/Layout'
-import Login from '../containers/login'
+import Login from '../containers/Login'
+import NewPassword from '../containers/NewPassword'
 import RecoveryPassword from '../containers/RecoveryPassword';
+import CreateAccount from '../containers/CreateAccount';
+import InformationAccount from '../containers/InformationAccount';
 import Home from '../pages/Home'
 import NotFound from '../pages/NotFound'
 import '../styles/global.css';
@@ -13,8 +16,11 @@ const App = () => {
       <Layout>
         <Routes>        
           <Route exact path ="/" element ={<Home/>} />
-          <Route exact path ="/login" element={<Login/>}/>
+          <Route exact path ="/login" element = {<Login/>}/>
+          <Route exact path = "/create-account" element = {<CreateAccount/>}/>
+          <Route exact path = "/information-account" element ={<InformationAccount/>}/>
           <Route exact path ="/recovery-password" element={<RecoveryPassword/>}/>
+          <Route exact path ="/new-password" element={<NewPassword/>}/>
           <Route path="*" element ={<NotFound/>}/>               
         </Routes>
       </Layout>
