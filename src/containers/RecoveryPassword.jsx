@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import '../styles/RecoveryPassword.scss';
+import Header from '../components/Header'
+import Layout from './Layout'
 
 const RecoveryPassword = () => {
     return(
+        <Layout>
+        <Header/>
         <div className="login">
             <div className="form-container">
                 <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
@@ -19,6 +23,7 @@ const RecoveryPassword = () => {
             </div>
         </div>
 
+        </Layout>
     );
 }
 export default RecoveryPassword;

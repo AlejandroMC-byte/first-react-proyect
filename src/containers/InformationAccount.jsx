@@ -1,7 +1,11 @@
 import React from 'react'
 import '../styles/InformationAccount.scss'
+import Header from '../components/Header'
+import Layout from './Layout'
 const InformationAccount = () => {
     return (
+      <Layout>
+      <Header/>
       <div className="login">
         <div className="form-container">
           <h1 className="title">My account</h1>
@@ -24,10 +28,11 @@ const InformationAccount = () => {
               type="button"
               defaultValue="Edit"
               className="secondary-button login-button"
-            />
+              />
           </form>
         </div>
       </div>
+    </Layout>
     );
 }
 
