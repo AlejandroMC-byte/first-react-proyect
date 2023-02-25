@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/RecoveryPassword.scss';
 import Header from '../components/Header'
-import Layout from './Layout'
+import Layout from '../containers/Layout'
 
 const RecoveryPassword = () => {
     return(

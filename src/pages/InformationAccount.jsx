@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/InformationAccount.scss'
 import Header from '../components/Header'
-import Layout from './Layout'
+import Layout from '../containers/Layout'
 const InformationAccount = () => {
     return (
       <Layout>

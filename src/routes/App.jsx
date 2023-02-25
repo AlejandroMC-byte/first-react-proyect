@@ -1,11 +1,11 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from '../containers/Layout'
-import Login from '../containers/Login'
-import NewPassword from '../containers/NewPassword'
-import RecoveryPassword from '../containers/RecoveryPassword';
-import CreateAccount from '../containers/CreateAccount';
-import InformationAccount from '../containers/InformationAccount';
+import Login from '../pages/Login'
+import NewPassword from '../pages/NewPassword'
+import RecoveryPassword from '../pages/RecoveryPassword';
+import CreateAccount from '../pages/CreateAccount';
+import InformationAccount from '../pages/InformationAccount';
 import HistoryOrders from '../containers/HistoryOrders';
 import Home from '../pages/Home'
 import NotFound from '../pages/NotFound'
