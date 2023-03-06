@@ -1,11 +1,9 @@
 import React from "react";
 import '../styles/HistoryOrders.scss'
 import Header from '../components/Header'
-import Layout from './Layout'
+import Layout from '../containers/Layout'
 const HistoryOrders = () => {
   return (
-    <Layout>
-    <Header/>
     <div className="my-order">
       <div className="my-order-container">
         <h1 className="title">My orders</h1>
@@ -45,7 +43,6 @@ const HistoryOrders = () => {
         </div>
       </div>
     </div>
-  </Layout>
   );
 };
 

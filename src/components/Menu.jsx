@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/MenuAccount.scss'
 const MenuAccount = () => {
     return (
       <div className="desktop-menu">

@@ -1,14 +1,13 @@
 import React from 'react'
 import Header from '../components/Header'
-import Elements from '../components/Elements'
+import Elements from '../containers/Elements'
 import Layout from '../containers/Layout';
 
 const Home = () => {
     return (
-        <Layout>
-            <Header />
+            <>
             <Elements />
-        </Layout>
+            </>
         );
 }
 

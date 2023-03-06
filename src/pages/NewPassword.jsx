@@ -5,8 +5,7 @@ import Layout from '../containers/Layout'
 
 const Login = () =>{
     return(
-        <Layout>
-        <Header/>    
+        
         <div className="login">
             <div className="form-container">
                 <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo"/>
@@ -21,7 +20,7 @@ const Login = () =>{
                 </form>
             </div>
         </div>
-        </Layout>
+        
     );
 }
 

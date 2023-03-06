@@ -4,8 +4,6 @@ import Header from '../components/Header'
 import Layout from '../containers/Layout'
 const InformationAccount = () => {
     return (
-      <Layout>
-      <Header/>
       <div className="login">
         <div className="form-container">
           <h1 className="title">My account</h1>
@@ -32,7 +30,7 @@ const InformationAccount = () => {
           </form>
         </div>
       </div>
-    </Layout>
+    
     );
 }
 

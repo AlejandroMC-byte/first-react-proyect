@@ -4,8 +4,6 @@ import Header from '../components/Header'
 import Layout from '../containers/Layout'
 const Login = () => {
     return (
-      <Layout>
-      <Header/>
       <div className="login">
         <div className="form-container">
           <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
@@ -38,7 +36,6 @@ const Login = () => {
           <button className="secondary-button signup-button">Sign up</button>
         </div>
       </div>
-    </Layout>
     );
 }
 

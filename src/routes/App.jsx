@@ -6,10 +6,11 @@ import NewPassword from '../pages/NewPassword'
 import RecoveryPassword from '../pages/RecoveryPassword';
 import CreateAccount from '../pages/CreateAccount';
 import InformationAccount from '../pages/InformationAccount';
-import HistoryOrders from '../containers/HistoryOrders';
+import HistoryOrders from '../pages/HistoryOrders';
 import Home from '../pages/Home'
 import NotFound from '../pages/NotFound'
 import '../styles/global.css';
+import Checkout from '../pages/Checkout';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route exact path ="/recovery-password" element={<RecoveryPassword/>}/>
           <Route exact path ="/new-password" element={<NewPassword/>}/>
           <Route exact path ="/history-orders" element={<HistoryOrders/>}/>
+          <Route exact path = "/checkout" element={<Checkout/>}/>
           <Route path="*" element ={<NotFound/>}/>               
         </Routes>
       </Layout>
