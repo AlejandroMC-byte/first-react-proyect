@@ -1,10 +1,14 @@
 import React from "react";
 import '../styles/ProductsCart.scss'
+
+import close from '@icons/icon_close.png' 
+import flechita from '@icons/flechita.svg' 
+
 const ProductsCart = () => {
   return (
     <aside className="product-detail">
       <div className="title-container">
-        <img src="./icons/flechita.svg" alt="arrow" />
+        <img src={flechita} alt="arrow" />
         <p className="title">My order</p>
       </div>
       <div className="my-order-content">
@@ -17,7 +21,7 @@ const ProductsCart = () => {
           </figure>
           <p>Bike</p>
           <p>$30,00</p>
-          <img src="./icons/icon_close.png" alt="close" />
+          <img src={close} alt="close" />
         </div>
         <div className="shopping-cart">
           <figure>
@@ -28,7 +32,7 @@ const ProductsCart = () => {
           </figure>
           <p>Bike</p>
           <p>$30,00</p>
-          <img src="./icons/icon_close.png" alt="close" />
+          <img src={close} alt="close" />
         </div>
         <div className="shopping-cart">
           <figure>
@@ -39,7 +43,7 @@ const ProductsCart = () => {
           </figure>
           <p>Bike</p>
           <p>$30,00</p>
-          <img src="./icons/icon_close.png" alt="close" />
+          <img src={close} alt="close" />
         </div>
         <div className="order">
           <p>
