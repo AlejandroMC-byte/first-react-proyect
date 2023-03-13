@@ -21,14 +21,14 @@ const App = () => {
       <BrowserRouter basename='/first-react-proyect'>
         <Layout>
           <Routes>        
-            <Route exact path ="./" element ={<Home/>} />
-            <Route exact path ="./login" element = {<Login/>}/>
-            <Route exact path = "./create-account" element = {<CreateAccount/>}/>
-            <Route exact path = "./information-account" element ={<InformationAccount/>}/>
-            <Route exact path ="./recovery-password" element={<RecoveryPassword/>}/>
-            <Route exact path ="./new-password" element={<NewPassword/>}/>
-            <Route exact path ="./history-orders" element={<HistoryOrders/>}/>
-            <Route exact path = "./checkout" element={<Checkout/>}/>
+            <Route exact path ="/" element ={<Home/>} />
+            <Route exact path ="/login" element = {<Login/>}/>
+            <Route exact path = "/create-account" element = {<CreateAccount/>}/>
+            <Route exact path = "/information-account" element ={<InformationAccount/>}/>
+            <Route exact path ="/recovery-password" element={<RecoveryPassword/>}/>
+            <Route exact path ="/new-password" element={<NewPassword/>}/>
+            <Route exact path ="/history-orders" element={<HistoryOrders/>}/>
+            <Route exact path = "/checkout" element={<Checkout/>}/>
             <Route path="*" element ={<NotFound/>}/>               
           </Routes>
         </Layout>
