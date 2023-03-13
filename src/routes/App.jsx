@@ -11,24 +11,29 @@ import Home from '../pages/Home'
 import NotFound from '../pages/NotFound'
 import '../styles/global.css';
 import Checkout from '../pages/Checkout';
+import AppContext from '../context/AppContext';
+import useInitialState from '../hooks/useInitialState';
 
 const App = () => {
+  const initialState = useInitialState();
   return (
-    <BrowserRouter>
-      <Layout>
-        <Routes>        
-          <Route exact path ="/" element ={<Home/>} />
-          <Route exact path ="/login" element = {<Login/>}/>
-          <Route exact path = "/create-account" element = {<CreateAccount/>}/>
-          <Route exact path = "/information-account" element ={<InformationAccount/>}/>
-          <Route exact path ="/recovery-password" element={<RecoveryPassword/>}/>
-          <Route exact path ="/new-password" element={<NewPassword/>}/>
-          <Route exact path ="/history-orders" element={<HistoryOrders/>}/>
-          <Route exact path = "/checkout" element={<Checkout/>}/>
-          <Route path="*" element ={<NotFound/>}/>               
-        </Routes>
-      </Layout>
-    </BrowserRouter>
+    <AppContext.Provider value={initialState}>
+      <BrowserRouter>
+        <Layout>
+          <Routes>        
+            <Route exact path ="/" element ={<Home/>} />
+            <Route exact path ="/login" element = {<Login/>}/>
+            <Route exact path = "/create-account" element = {<CreateAccount/>}/>
+            <Route exact path = "/information-account" element ={<InformationAccount/>}/>
+            <Route exact path ="/recovery-password" element={<RecoveryPassword/>}/>
+            <Route exact path ="/new-password" element={<NewPassword/>}/>
+            <Route exact path ="/history-orders" element={<HistoryOrders/>}/>
+            <Route exact path = "/checkout" element={<Checkout/>}/>
+            <Route path="*" element ={<NotFound/>}/>               
+          </Routes>
+        </Layout>
+      </BrowserRouter>
+    </AppContext.Provider>
   )
 }
 
